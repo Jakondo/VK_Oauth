@@ -8,7 +8,7 @@ django-vkontakte-api==0.8.7
 django-vkontakte-places==0.7.1
 django-vkontakte-users==0.8.7
 gunicorn==20.0.4
-httplib2==0.9.2
+httplib2==0.18.0
 oauth==1.0.1
 oauthlib==3.1.0
 social-auth-app-django==4.0.0
