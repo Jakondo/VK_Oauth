@@ -25,7 +25,7 @@ SECRET_KEY = '+4ans!l$j$g6zayx1!s^sr=+_!f1!$+h1&l1(i27hx2754b0!1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['test-vk-oauth.herokuapp.com']
 
 
 # Application definition
