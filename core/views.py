@@ -14,7 +14,7 @@ def login(request):
 @login_required
 def home(request):
     acc_tok = request.user.social_auth.get().extra_data['access_token']
-    r = requests.get('https://api.vk.com/method/friends.get', params = {'access_token' : acc_tok, 'count': 5, 'v': 5.210, 'fields': 'first_name, last_name, photo_100'})
+    r = requests.get('https://api.vk.com/method/friends.get', params = {'access_token' : acc_tok, 'order': random, 'count': 5, 'v': 5.210, 'fields': 'first_name, last_name, photo_100'})
     friends = r.json()['response']
     pprint(friends)
     return render(request, 'home.html', friends)
